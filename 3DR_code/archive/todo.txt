@@ -1,0 +1,26 @@
+13 JULY 2016
+x figure out if guided > auto
+	x have a way to talk to solo while on mission (terminal, actions, etc)
+run code on solo x (check for override beforehand on controller)
+	try using remote while running basic python script
+		x WRITE REALLY SIMPLE SCRIPT (takeoff/land and override)
+figure out MAVLINK
+
+DO NEXT:
+x set up terminal communication with drone (aka if you type "s" the drone stops
+x implement play/pause with keystrokes
+x alternate guided and auto for route
+- load simple script onto drone
+- use MAVLINK to set up fence
+
+
+
+
+
+
+
+
+
+
+
+

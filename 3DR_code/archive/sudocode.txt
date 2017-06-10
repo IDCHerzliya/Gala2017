@@ -1,0 +1,10 @@
+arm and takeoff
+
+loop
+	make decision // between a few routes, filtered by start point
+	if not end
+		go on route
+	if end
+		break
+
+land

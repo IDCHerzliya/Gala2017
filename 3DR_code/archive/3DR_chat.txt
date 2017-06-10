@@ -1,0 +1,86 @@
+	
+Live Support
+Ask us anything
+👍👎
+Chat started
+Amy Chen
+I'm doing research and we're working with a 3DR drone. I'm wondering about how dronekit interacts with the controller—namely, when the drone is running on a path loaded from a python program (in either in auto or guided mode)—does using the controller pull the drone away from that path? 
+
+Gio joined the chat
+
+Gio
+Hello Amy,
+
+Thank you for contacting 3DR Tech Support.
+
+Let me work in the answer, can you give me a moment?
+Amy Chen
+That's fine :)
+
+
+Gio
+Thank you
+Aram joined the chat
+
+Gio
+I'm in contact with engineering, one moment, please
+
+Aram
+Hello Amy. Are you asking that if the controller get inhibited while in Auto or Guided?
+Amy Chen
+I think so yes
+
+
+Aram
+No. The phyton script will change the flight mode of the vehicle into Auto or Guided, but the link with the controller will still active, and you will still be able to use Pause or FLY to change the flight mode back to FLY (Loiter)
+Amy Chen
+Ok thanks so much :) Also we're not super clear on the difference between auto and guided mode---could you help clarify this for us?
+
+
+Aram
+We would need to back up a little to ArduCopter in general
+
+Let me give you some links
+
+http://ardupilot.org/copter/docs/flight-modes.html?highlight=flight%20modes
+
+So.. in other words. 
+
+on Auto you program a pre planned set of waypoints and actions and the vehicle will execute that "mission" while in Auto. 
+
+Guided requires the constant update for the action that you require the vehicle to do
+
+Guided: http://ardupilot.org/copter/docs/ac2_guidedmode.html#ac2-guidedmode
+
+Auto: http://ardupilot.org/copter/docs/auto-mode.html#auto-mode
+Amy Chen
+Got it, thank you. In guided mode, would we be able to interrupt the current goto command with some sort of pause/play command through the command line?
+
+
+Aram
+correct
+Amy Chen
+ok, great :) Thanks for being so helpful!
+
+
+Aram
+no problem :) 
+
+Is there anything else we can help?
+Amy Chen
+Mmmm not that I know of. Thanks again and have a good day!
+
+Gio left the chat
+
+Aram
+You too Amy, have an excellent day
+Chat rated Good
+Comment submitted
+Aram left the chat
+
+Type your message here
+Live Chat
+Options•Hi, Amy Chen
+
+
+
