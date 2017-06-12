@@ -133,10 +133,10 @@ def monitor_mission():
         print 'Current waypoint (%s)' % (nextwaypoint)
         
         #Stop drone when reach point
-        if nextwaypoint != curwaypoint:
-            curwaypoint = nextwaypoint
-            vehicle.mode = VehicleMode("GUIDED")
-            print "STOP on waypoint"
+        #if nextwaypoint != curwaypoint:
+        #    curwaypoint = nextwaypoint
+        #    vehicle.mode = VehicleMode("GUIDED")
+        #    print "STOP on waypoint"
         
         # USER CAN INPUT "p" TO PAUSE THE ROUTE
         if keyPoller.poll() == 'p':
@@ -194,14 +194,14 @@ def max_altitude_check(self, attr_name, value):
 
 # UNCOMMENT FOR ACTUAL DRONE FLIGHT
 # Connect to UDP endpoint (and wait for default attributes to accumulate)
-# connection_string = sys.argv[1] if len(sys.argv) >= 2 else 'udpin:0.0.0.0:14550'
+connection_string = 'udpin:0.0.0.0:14550'
 
 # UNCOMMENT FOR SIMULATION
 # Start SITL if no connection string specified
-# if not connection_string:
-import dronekit_sitl
-sitl = dronekit_sitl.start_default(START_LAT, START_LONG)
-connection_string = sitl.connection_string()
+#if not connection_string:
+#    import dronekit_sitl
+#    sitl = dronekit_sitl.start_default(START_LAT, START_LONG)
+#    connection_string = sitl.connection_string()
     
 #Connect to the Vehicle
 print 'Connecting to vehicle on: %s' % connection_string
