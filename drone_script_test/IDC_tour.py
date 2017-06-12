@@ -15,20 +15,20 @@ from keypoller import *
 import time, csv, math, sys, argparse  
 
 #CONSTANTS
-MAX_ALTITUDE = 10
-TARGET_ALTITUDE = 5
+MAX_ALTITUDE = 5
+TARGET_ALTITUDE = 3
 
 GROUNDSPEED = 1 #m/s
 AIRSPEED = 2 #m/s
 
-DESTINATION_LAT = 37.428689
-DESTINATION_LONG = -122.175781
-START_LAT = 37.428182
-START_LONG = -122.173539
+DESTINATION_LAT = 32.1767383
+DESTINATION_LONG = 34.8369436
+START_LAT = 32.1771539
+START_LONG = 34.8371442
 
 #INSTANCE VARIABLES
 above_max_alt = False
-num_waypoints = 2 #excluding start and dummy
+num_waypoints = 2 #starting with 2 points
      
 def get_distance_metres(aLocation1, aLocation2):
     """
